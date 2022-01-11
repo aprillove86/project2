@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS -->
+    <!-- JavaScript Bundle with Popper -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <title>Show Route</title>
+  </head>
+  <body>
+    <span><h1>Denver Restaurant Week Hotspots</h1></span></a>
+    <main>
+      <a href="/restaurants/seed">
+        <button type="button" class="btn">I'll Take The Check</button>
+      </a> 
+      <div class="main-card">
+              <img src="<%= singlePlace.img %>" class="image" style="width:350px"/></a>
+              <h2><%=singlePlace.name %></h2>
+              <h3 class="single-cuisine">Cuisine: <%= singlePlace.cuisine %></h3>
+              <h5><%=singlePlace.chef%></h5>
+              <a href="/restaurants/<%=singlePlace._id%>/edit">
+                <input type="submit" class="edit" value="Change It Up"/>      
+      </div>
+      <form action="/restaurants/<%=singlePlace._id%>?_method=DELETE" method="POST">
+        <input type="submit" class="btn" value="Didn't Like It"/>
+       </form> 
+     </main>
+  </body>
+  </html> 
+
+
+
+
+
+
+
+
+
+</html>    

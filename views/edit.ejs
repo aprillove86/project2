@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <title>Edit Page</title>
+  </head>  
+    <body>
+      <h1>Denver Restaurant Week Spots</h1>
+      <nav>
+      <h2>Add Some Flavor</h2>
+      <div class="edit-card">
+        <a href="/restaurants">
+          <button type="show-button" class="btn">Back Home</button>
+      </a> 
+      </nav>
+     
+      <form action="/restaurants/<%= singlePlace._id%>?_method=PUT" method="POST" class="form">
+         <div class="edit-space">Restaurant: </div>
+         <div class="addition"><input type="text" name="name"  placeholder="<%=singlePlace.name%>"/></div>
+         
+         <div class="edit-space">Cuisine: </div>
+         <div class="addition"><input type="text" name="cuisine"  placeholder="<%=singlePlace.cuisine%>"/></div>
+                  
+         <div class="edit-space">Chef: </div>
+         <div class="addition"><input type="text" name="chef" placeholder="<%=singlePlace.chef%>"/></div>
+          
+        <div class="edit-space">Image: </div>
+         <div class="addition"><input type="text"  name="img" placeholder="<%=singlePlace.img%>"/></div>
+         <div class="edit-button"><input type="submit" class="edit-submission" value="Change it Up"/></div>
+      </form>   
+     
+    </div>
+  </body>
+  </html>
+  
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <title>Added Items</title>
+  </head>
+  <body>
+      <h1>Denver Restaurant Week | Places to Try</h1>
+      <nav>
+      <h2>More Flavor</h2>
+      <a href="/restaurants">
+          <button type="button" class="btn btn-dark">Check Please!</button>
+      </a> 
+      </nav>
+      <div class="container">
+       <div class="edit-card">
+        <form action="/restaurants" method="POST">
+         <div class="new-name">Restaurant: </div>
+         <div class="addition"><input type="text" name="name" placeholder="<%=singlePlace.name%>"/></div>
+         
+         <div class="new-cuisine">Cuisine: </div>
+         <div class="addition"><input type="text" name="cuisine" placeholder="<%=singlePlace.cuisine%>"/></div>
+         
+         <div class="new-image">Image: </div>
+         <div class="addition"><input type="text" name="img" placeholder="<%=singlePlace.img%>"/></div>
+         
+         <div class="new-chef">Chef: </div>
+         <div class="addition"><input type="text" name="chef" placeholder="<%=singlePlace.chef%>"/></div>
+        
+         <div class="new-button"><input type="submit" class="new-submission" value="Add Your Flavor"></div>
+        </form> 
+      </div>  
+    </div>
+  </body>
+  </html>
